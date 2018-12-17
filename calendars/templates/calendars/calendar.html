@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'calendars/css/dycalendar.min.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+     <div class="some-class">
+            <h1>Today calendar</h1>
+            <div class="calendar-container">
+                <div id="dycalendar-today" class="dycalendar-container"></div>
+            </div>
+        </div>
+
+        <div class="some-class">
+            <h1>Month calendar</h1>
+            <div class="calendar-container">
+                <div id="dycalendar-month" class="dycalendar-container"></div>
+            </div>
+        </div>
+
+        <hr />
+
+                <!-- javascript -->
+        <script src="{% static 'calendars/js/jquery.min.js' %}"></script>
+        <script src="{% static 'calendars/js/dycalendar-jquery.min.js' %}"></script>
+        <script src="{% static 'calendars/js/default.js' %}"></script>
+    </body>
+</html>
+{% endblock %}

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'weather.apps.WeatherConfig',
     'rock.apps.RockConfig',
+    'calendars.apps.CalendarsConfig',
     'crispy_forms',
 
 ]
